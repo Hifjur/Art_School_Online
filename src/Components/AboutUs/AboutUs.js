@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import img from '../../images/image.jpg'
+
 const AboutUs = () => {
+    //css
     const cardImage={
         hight: '100%',
         width: '100%'

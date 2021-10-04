@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Footer = () => {
+    //css
     const footerStyle={
         marginTop: '30px',
         backgroundColor:'orange',

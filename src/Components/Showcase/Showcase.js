@@ -3,17 +3,22 @@ import { Carousel } from 'react-bootstrap';
 
 const Showcase = () => {
     
+    const textColor={
+        color: "orange",
+        backgroundColor: 'rgba(206, 230, 252, 0.648)',
+        padding: '5px'
+    }
     return (
         <Carousel>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://image.freepik.com/free-vector/angry-robot-scolding-mechanical-dog-peeing-floor-home_74855-16028.jpg"
+                    src="https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/e9a0d7ee-a1be-11e8-85da-eeb7a9ce36e4?source=next&fit=scale-down&quality=highest&width=1067"
                     alt="First slide"
                     style={{height:'700px', with: '800px'}}
                 />
                 <Carousel.Caption>
-                    <h3>Digital Art Complete Course</h3>
+                    <h3 style={textColor} >Digital Art Complete Course</h3>
                     
                 </Carousel.Caption>
             </Carousel.Item>
@@ -26,7 +31,7 @@ const Showcase = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Complete Paiting Course</h3>
+                    <h3 style={textColor}>Complete Paiting Course</h3>
                     
                 </Carousel.Caption>
             </Carousel.Item>
@@ -39,7 +44,7 @@ const Showcase = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Complete Sketch Course</h3>
+                    <h3 style={textColor}>Complete Sketch Course</h3>
                     
                 </Carousel.Caption>
             </Carousel.Item>

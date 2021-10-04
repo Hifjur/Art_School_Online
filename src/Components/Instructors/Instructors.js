@@ -4,6 +4,7 @@ import Instructor from '../Instructor/Instructor';
 
 
 const Instructors = () => {
+    //css
     const cardGroup= {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr 1fr',
@@ -15,7 +16,7 @@ const Instructors = () => {
         color: 'white',
         padding: '20px'
     }
-
+    //css ends here
     const instructorsdata = InstructorsHandler();
     const {instructors}= instructorsdata;
     console.log(instructors);

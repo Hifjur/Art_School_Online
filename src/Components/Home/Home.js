@@ -3,7 +3,7 @@ import CoursesHandler from "../../Hook/CoursesHandler.js";
 
 import Showcase from "../Showcase/Showcase";
 const Home = () => {
-
+    //css
     const cardGroup= {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -15,7 +15,9 @@ const Home = () => {
         color: 'white',
         padding: '20px'
     }
+    //css ends here
 
+    
     const coursesdata = CoursesHandler();
     const {courses}= coursesdata;
     const featured = courses.filter(course => course.key <= 4)

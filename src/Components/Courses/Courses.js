@@ -3,6 +3,7 @@ import CoursesHandler from '../../Hook/CoursesHandler';
 import Course from '../Course/Course';
 
 const Courses = () => {
+    //css
     const cardGroup= {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr 1fr',
@@ -13,6 +14,8 @@ const Courses = () => {
         color: 'white',
         padding: '20px'
     }
+
+    
     const coursesdata = CoursesHandler();
     const {courses}= coursesdata;
     console.log(courses);

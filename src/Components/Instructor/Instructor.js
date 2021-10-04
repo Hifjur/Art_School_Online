@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Card, Image, Row } from 'react-bootstrap';
 
 const Instructor = (props) => {
+    //css
     const cardImage={
         height: '250px',
         width: 'auto',
@@ -17,7 +18,7 @@ const Instructor = (props) => {
         height: '500px',
         boxShadow: '5px 10px #888888'
     };
-
+    //css end here
 
     const { name, img, Position} = props.data;
     //console.log(props.data);

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-
+//css
 const style ={
     color: 'white',
     textDecoration: 'none',
@@ -23,7 +23,7 @@ const title= {
     padding: '30px',
     backgroundColor: 'orange',
 }
-
+//css ends here
 const Header = () => {
     return (
         <div className="header">
