@@ -8,13 +8,17 @@ const Courses = () => {
         gridTemplateColumns: '1fr 1fr 1fr',
         gridGap:'20px',
     }
-
+    const titleStyle={
+        backgroundColor: '#292B2C',
+        color: 'white',
+        padding: '20px'
+    }
     const coursesdata = CoursesHandler();
     const {courses}= coursesdata;
     console.log(courses);
     return (
         <div>
-            <h1>All Courses</h1>
+            <h1 style={titleStyle}>All Courses</h1>
             <div className = "container " style={cardGroup}>
             {
                 courses.map(course => <Course key = {course.key} data= {course}></Course>)                

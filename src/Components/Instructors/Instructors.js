@@ -10,12 +10,18 @@ const Instructors = () => {
         gridGap:'30px',
     }
 
+    const titleStyle={
+        backgroundColor: '#292B2C',
+        color: 'white',
+        padding: '20px'
+    }
+
     const instructorsdata = InstructorsHandler();
     const {instructors}= instructorsdata;
     console.log(instructors);
     return (
         <div>
-            <h1>All instructors</h1>
+            <h1 style={titleStyle}>All Instructors</h1>
             <div className = "container " style={cardGroup}>
             {
                 instructors.map(instructor => <Instructor key= {instructor.key} data= {instructor}></Instructor>)                

@@ -23,6 +23,7 @@ const title= {
     padding: '30px',
     backgroundColor: 'orange',
 }
+
 const Header = () => {
     return (
         <div className="header">

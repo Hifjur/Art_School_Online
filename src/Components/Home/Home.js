@@ -9,13 +9,19 @@ const Home = () => {
         gridTemplateColumns: '1fr 1fr 1fr 1fr',
     }
 
+    const titleStyle={
+        backgroundColor: '#292B2C',
+        color: 'white',
+        padding: '20px'
+    }
+
     const coursesdata = CoursesHandler();
     const {courses}= coursesdata;
     const featured = courses.filter(course => course.key <= 4)
     return (
         <div>
             <Showcase></Showcase>
-            <h1> Featured Courses</h1>
+            <h1 style={titleStyle}> Featured Courses</h1>
             <div className = "container " style={cardGroup}>
             {
                 featured.map(course => <Course key={course.key} data= {course}></Course>)                
