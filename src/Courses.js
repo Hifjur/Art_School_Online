@@ -79,5 +79,5 @@ const Courses = [
         price: 4000,
         img:'https://image.freepik.com/free-vector/angry-robot-scolding-mechanical-dog-peeing-floor-home_74855-16028.jpg'
 
-    },
+    }
 ]
