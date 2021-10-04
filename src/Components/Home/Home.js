@@ -1,16 +1,17 @@
 import Course from "../Course/Course";
 import CoursesHandler from "../../Hook/CoursesHandler.js";
-import './Home.css'
+
 import Showcase from "../Showcase/Showcase";
 const Home = () => {
 
     const cardGroup= {
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr 1fr',
+        gridTemplateColumns: '1fr 1fr',
+        gridGap : '80px'
     }
 
     const titleStyle={
-        backgroundColor: '#292B2C',
+        backgroundColor: '#151617',
         color: 'white',
         padding: '20px'
     }

@@ -33,7 +33,7 @@ const Instructor = (props) => {
                             {Position}
                             
                         </Card.Text>
-                        <Button variant="dark">Contact</Button>
+                        <Button variant="dark">Courses</Button>
                     </Card.Body>
                 </Card>
             </Row>
