@@ -10,7 +10,7 @@ const Home = () => {
     }
 
     const coursesdata = CoursesHandler();
-    const {courses, setCourses}= coursesdata;
+    const {courses}= coursesdata;
     const featured = courses.filter(course => course.key <= 4)
     return (
         <div>
@@ -18,7 +18,7 @@ const Home = () => {
             <h1> Featured Courses</h1>
             <div className = "container " style={cardGroup}>
             {
-                featured.map(course => <Course data= {course}></Course>)                
+                featured.map(course => <Course key={course.key} data= {course}></Course>)                
             }
             </div>
         </div>

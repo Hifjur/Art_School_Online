@@ -7,7 +7,7 @@ const CoursesHandler = () => {
         .then(res => res.json())
         .then(data => setCourses(data));
     },[])
-    return {courses, setCourses};
+    return {courses};
 };
 
 export default CoursesHandler;

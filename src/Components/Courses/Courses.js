@@ -5,19 +5,19 @@ import Course from '../Course/Course';
 const Courses = () => {
     const cardGroup= {
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr 1fr',
+        gridTemplateColumns: '1fr 1fr 1fr',
         gridGap:'20px',
     }
 
     const coursesdata = CoursesHandler();
-    const {courses, setCourses}= coursesdata;
+    const {courses}= coursesdata;
     console.log(courses);
     return (
         <div>
             <h1>All Courses</h1>
             <div className = "container " style={cardGroup}>
             {
-                courses.map(course => <Course data= {course}></Course>)                
+                courses.map(course => <Course key = {course.key} data= {course}></Course>)                
             }
             </div>
         </div>
