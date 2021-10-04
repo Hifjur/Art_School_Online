@@ -1,6 +1,7 @@
 import Course from "../Course/Course";
 import CoursesHandler from "../../Hook/CoursesHandler.js";
 import './Home.css'
+import Showcase from "../Showcase/Showcase";
 const Home = () => {
 
     const cardGroup= {
@@ -13,6 +14,7 @@ const Home = () => {
     const featured = courses.filter(course => course.key <= 4)
     return (
         <div>
+            <Showcase></Showcase>
             <h1> Featured Courses</h1>
             <div className = "container " style={cardGroup}>
             {
